@@ -3,30 +3,76 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="src/css/bootstrap.min.css">
-    <title>Louise Hulsman | Carousel</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./src/css/style.css" rel="stylesheet">
+
+    <title>Louise Hulsman| Carousel</title>
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-light navbar-expand-md">
             <div class="container"><a class="navbar-brand" href="#">Louise Hulsman</a><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../Carousel/index.html">Carousel</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../Carousel/index.html">Carousel</a></li>
                         <li class="nav-item"><a class="nav-link" href="../grid/index.html">Grid</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="../navbar/index.html">Navbar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../navbar/index.html">Navbar</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Carousel/src/img/pexels-photo-317157.jpeg" class="d-block w-100" alt="..." style="height: 100vh">
+                <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5)">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../Carousel/src/img/pexels-photo-3933949.jpeg" class="d-block w-100" alt="..." style="height: 100vh">
+                <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5)">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../Carousel/src/img/pexels-photo.jpg" class="d-block w-100" alt="..." style="height: 100vh">
+                <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5)">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../Carousel/src/img/surfer-wave-sunset-the-indian-ocean-390051.jpeg" class="d-block w-100" alt="..." style="height: 100vh">
+                <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5)">
+                    <h5>Fourth slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <script src="./src/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
